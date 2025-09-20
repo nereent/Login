@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register page</title>
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="../sweetalert2/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!-- SweetAlert2 JS -->
+    <script src="../sweetalert2/sweetalert2.min.js"></script>
+    <script defer src="../Register/register.js"></script>
+      <script defer src="../langToggle/langToggle.js"></script>
+
+</head>
+
+<body>
+  <div id="langToggleContainer"></div>
+
+    <form id="Register" class="form">
+        <input type="text" id="FN" class="first" placeholder="First Name" data-en-placeholder="First Name"
+            data-ar-placeholder="الاسم الأول" required />
+        <input type="text" id="LN" class="last" placeholder="Last Name" data-en-placeholder="Last Name"
+            data-ar-placeholder="اسم العائلة" required />
+        <input type="email" id="email" class="email" placeholder="Your Email" data-en-placeholder="Your Email"
+            data-ar-placeholder="البريد الإلكتروني" required />
+        <input type="password" id="pass" class="number" placeholder="Your password" data-en-placeholder="Your password"
+            data-ar-placeholder="كلمة المرور" required />
+
+        <label>
+            <input type="checkbox" id="rememberMe" />
+            <span data-en="Remember Me" data-ar="تذكرني">Remember Me</span>
+        </label>
+
+        <button type="submit" class="btn" data-en="Register" data-ar="تسجيل">Register</button>
+
+        <p data-en="You have an account?" data-ar="هل لديك حساب؟">
+            You have an account? <a href="../login/login.html" data-en="Login" data-ar="تسجيل الدخول">Login</a>
+        </p>
+    </form>
+</body>
+
+</html>

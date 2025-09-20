@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../sweetalert2/sweetalert2.min.css">
+  <link rel="stylesheet" href="../style/login.css">
+
+  <script src="../sweetalert2/sweetalert2.min.js"></script>
+  <script defer src="../login/login.js"></script>
+  <script defer src="../langToggle/langToggle.js"></script>
+</head>
+
+<body>
+    <div id="langToggleContainer"></div>
+
+  <form id="loginForm" class="form">
+    <input type="email" id="email" 
+           placeholder="Your Email" 
+           data-en-placeholder="Your Email" 
+           data-ar-placeholder="البريد الإلكتروني" required />
+    <input type="password" id="pass" 
+           placeholder="Your password" 
+           data-en-placeholder="Your password" 
+           data-ar-placeholder="كلمة المرور" required />
+
+    <label>
+      <input type="checkbox" id="rememberMe" /> 
+      <span data-en="Remember Me" data-ar="تذكرني">Remember Me</span>
+    </label>
+
+    <button type="submit" class="btn" data-en="Login" data-ar="تسجيل الدخول">Login</button>
+
+    <p><a href="../forget/forget.html" class="forget" data-en="Forgot Password?" data-ar="نسيت كلمة المرور؟">Forgot Password?</a></p>
+
+    <p data-en="Don’t have an account?" data-ar="ليس لديك حساب؟">
+      Don’t have an account? <a href="../Register/index.html" data-en="Register" data-ar="سجل الآن">Register</a>
+    </p>
+    
+    <button type="button" id="deleteAccount" class="DeleteBtn" data-en="Delete Account" data-ar="حذف الحساب">
+      🗑️ Delete Account
+    </button>
+  </form>
+</body>
+
+</html>

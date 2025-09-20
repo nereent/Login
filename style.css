@@ -1,0 +1,128 @@
+@import url(./color.css);
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: linear-gradient( 135deg, var(--main-color) , #212121);
+     min-height: 100vh; 
+}
+.form 
+{
+    /* position: relative; */
+    /* background-color: var(--main-color); */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    padding: 20px;
+    width: 500px;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+    filter: drop-shadow(5px 5px 10px var(--thi-color) );
+  background: linear-gradient(var(--main-color), #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #EF7722) border-box;
+  border: 4px solid transparent;
+  padding: 32px 24px;
+  color: var(--thi-color);
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+
+input
+{
+    padding: 10px;
+    border-radius: 14px;   
+}
+.first ,.last ,.email, .number
+{
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    color: var(--sec-color);
+    background-color: transparent;
+    /* border: 2px solid #05161A; */
+    border-radius: 8px;
+    margin-right:4px ;
+}
+.first:hover,
+.last:hover,
+.email:hover,
+.number:hover {
+  background-color: var(--thi-color);
+  filter: drop-shadow(5px 5px 10px #6DA5C0);
+}
+button 
+{
+    position: relative;
+    background: transparent;
+    border: 2px solid var(--thi-color);
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    width: 80px;
+    border-radius: 10px;
+    margin: auto;
+    color: var(--thi-color);
+}
+button::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--thi-color);
+  top: 0%;
+  left: -100%;
+  scale: 1;
+  border-radius: inherit;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+button span {
+  transition: all 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+button span::before {
+  position: absolute;
+  content: 'Register';
+  top: 0;
+  left: 0;
+  color:var(--main-color);
+  width: 0;
+  overflow: hidden;
+}
+button:hover span::before {
+  width: 100%;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition-delay: 0.4s;
+}
+
+button:hover::before {
+  scale: 1;
+  top: 0%;
+  left: 0%;
+}
+
+button:hover {
+  border-color: transparent;
+}
+
+button:active {
+  scale: 0.9;
+}
+a 
+{
+    color: var(--thi-color);
+}
+
+
